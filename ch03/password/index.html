@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 폼</title>
+</head>
+
+<body>
+  <h2>회원가입</h2>
+  <form>
+    <p>
+      <label for="email">이메일</label>
+      <input type="text" name="email" id="email" required>
+    </p>
+    <p>
+      <label for="newPassword">비밀번호</label>
+      <input type="password" name="password" id="newPassword" minlength="8" required>
+    </p>
+    <p>
+      <label for="confirmPassword">비밀번호 확인</label>
+      <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" required>
+    </p>
+
+    <input type="hidden" name="signup_source" id="main_page">
+    <input type="hidden" name="referrer" id="google_ads">
+    <input type="hidden" name="form_version" id="2.1">
+
+    <button type="submit">회원가입</button>
+  </form>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      console.log("전송될 데이터");
+      for (let [key, value] of formData.entries()) {
+        if (key.includes("password")) {
+          console.log(key + ": " + "*".repeat(value.length));
+        } else {
+          console.log(key + ": " + value);
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

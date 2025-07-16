@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스트 입력 연습</title>
+  <style>
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 300px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>회원가입 폼</h2>
+  <form>
+    <div class="form-group">
+      <label for="fullname">성명 </label>
+      <input type="text" id="fullname" name="fullname" placeholder="실명을 입력해주세요." maxlength="20" required>
+    </div>
+
+    <div class="form-group">
+      <label for="nickname">닉네임 </label>
+      <input type="text" name="nickname" id="nickname" placeholder="2-10자 사이로 입력" minlength="2" maxlength="10" required>
+    </div>
+
+    <div class="form-group">
+      <label for="referral">추천인 코드</label>
+      <input type="text" name="referral" id="referral" placeholder="선택사항" pattern="[A-Z]{2}[0-9]{4}">
+    </div>
+
+    <button type="submit">회원가입</button>
+  </form>
+</body>
+
+</html>
