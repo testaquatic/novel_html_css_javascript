@@ -1,0 +1,23 @@
+.article-container article:first-child h2 {
+    color: #e74c3c;
+}
+
+.article-container article h2 + p.intro {
+    background-color: #e74c3c;
+    padding: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.article-container article .intro ~ p {
+    text-indent: 20px;
+    line-height: 1.6;
+}
+
+.meta span + span {
+    margin-left: 15px;
+}
+
+.meta span + span::before {
+    content: " | ";
+    color: #bdc3c7;
+}
