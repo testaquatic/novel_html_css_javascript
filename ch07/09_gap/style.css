@@ -1,0 +1,19 @@
+.gallary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    row-gap:30px;
+    column-gap: 15px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.photo {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
