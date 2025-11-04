@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>회원가입</title>
+</head>
+<body>
+    <div class="form-group">
+        <label for="fullname">성명 *</label>
+        <input type="text" name="fullname" id="fullname" placeholder="실명을 입력해주세요" maxlength="20" required />
+    </div>
+
+    <div class="form-group">
+        <label for="nickname">닉네임</label>
+        <input type="text" name="nickname" id="nickname" placeholder="2-10자 사이로 입력" minlength="2" maxlength="10" />
+    </div>
+
+    <div class="form-group">
+        <label for="referral">추천인 코드</label>
+        <input type="text" name="referral" id="referral" placeholder="선택사항" pattern="[A-Z]{2}[0-9]{4}" />
+    </div>
+
+    <input type="submit" value="회원가입" />
+</body>
+</html>

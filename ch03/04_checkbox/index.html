@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>회원가입 - 선택 기능 포함</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+
+    <form action="#" method="post">
+        <div class="form-section">
+            <h3>기본 정보</h3>
+            
+            <label for="username">아이디:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">비밀번호:</label>
+            <input type="password" name="password" id="password" required><br><br>
+        </div>
+        
+        <div class="form-section">
+            <h3>성별</h3>
+            <div class="radio-group">
+                <input type="radio" name="gender" id="male" value="남성" required>
+                <label for="male">남성</label>
+                <input type="radio" name="gender" id="female" value="여성" required>
+                <label for="female">여성</label>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>관심 분야(복수 선택 가능)</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" name="interest_tech" id="tech" value="기술">
+                <label for="tech">IT/기술</label><br>
+                
+                <input type="checkbox" name="interest_design" id="design" value="디자인">
+                <label for="design">디자인</label><br>
+                
+                <input type="checkbox" name="interest_business" id="business" value="비즈니스">
+                <label for="business">비즈니스</label><br>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <input type="checkbox" name="agree" id="agree" value="동의" required>
+            <label for="agree">개인정보 처리 방침에 동의합니다.(필수)</label><br>
+            <input type="checkbox" name="marketing" id="marketing" value="동의">
+            <label for="marketing">마케팅 정보 수신 동의(선택)</label>
+        </div>
+
+        <button type="submit">회원가입</button>
+    </form>
+</body>
+</html>

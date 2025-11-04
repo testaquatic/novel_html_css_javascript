@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>고객 문의</title>
+  </head>
+  <body>
+    <h2>고객 문의</h2>
+    <form action="#" method="post">
+      <p>
+      <label for="name">이름:</label>
+      <input type="text" name="name" id="name" required/>
+      </p>
+
+      <p>
+        <label for="inquiry">문의 내용:</label>
+        <textarea name="inquiry" id="inquiry" rows="5" cols="50" maxlength="100" placeholder="문의할 내용을 자세히 적어주세요"></textarea>
+        <div><span id="counter"></span></div>
+      </p>
+
+      <button type="submit">문의하기</button>
+    </form>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 300px;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+select:focus {
+    border-color: #4caf50;
+    outline: none;;
+}
+
+.multi-select {
+    height: 120px;
+}

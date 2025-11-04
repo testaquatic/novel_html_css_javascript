@@ -1,0 +1,10 @@
+.form-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkbox-group, .radio-group {
+    margin: 10px 0;
+}

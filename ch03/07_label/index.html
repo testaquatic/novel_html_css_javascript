@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>실무형 회원가입 폼</title>
+</head>
+<body>
+    <form action="#" method="post" class="signup-form">
+        <h2 class="form-title">회원가입</h2>
+
+        <div class="form-row">
+            <label for="fullname" class="form-label required">이름</label>
+            <input type="text" name="fullname" id="fullname" class="form-input" required>
+        </div>
+
+        <div class="form-row">
+            <label for="email" class="form-label required">이메일</label>
+            <input type="email" name="email" id="email" class="form-input" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="password" class="form-label required">비밀번호</label>
+            <input type="password" name="password" id="password" class="form-input" required>
+        </div>
+
+        <div class="form-row">
+            <label for="phone" class="form-label">전화번호</label>
+            <input type="tel" id="phone" name="phone" class="form-input">
+        </div>
+
+        <div class="form-row">
+            <div class="checkbox-container">
+                <input type="checkbox" name="marketing" id="marketing">
+                <label for="marketing">마케팅 정보 수신에 동의합니다.</label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">회원가입</button>
+    </form>
+</body>
+</html>
