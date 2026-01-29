@@ -1,0 +1,42 @@
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  font-family: "Malgun Gothic", sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #34495e;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+nav li:first-child a {
+  background-color: #f39c12;
+  color: white;
+  font-weight: bold;
+}
+
+nav li:last-child a {
+  border-right: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.special-section h2,
+.special-section p {
+  background-color: #ecf0f1;
+  padding: 10px;
+}
