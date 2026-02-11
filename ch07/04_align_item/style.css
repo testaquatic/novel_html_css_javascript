@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.item {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.stretch {
+  align-items: stretch;
+}
+.flex-start {
+  align-items: flex-start;
+}
+.flex-end {
+  align-items: flex-end;
+}
+.center {
+  align-items: center;
+}
+.baseline {
+  align-items: baseline;
+}
+
+.card-container {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.card p {
+  text-align: center;
+  color: #666;
+  line-height: 1.5;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #3498db;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

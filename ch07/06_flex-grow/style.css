@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 2px solid #e74c3c;
+  margin: 20px;
+  width: 800px;
+}
+
+.card {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card1 {
+  flex: 1 1 100px;
+}
+
+.card2 {
+  flex: 2 1 100px;
+}
+
+.card3 {
+  flex: 1 2 150px;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  min-height: 500px;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  background: #3498db;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+  background-color: #ecf0f1;
+  padding: 20px;
+}
+
+.ads {
+  flex: 0 0 150px;
+  background: #e67e22;
+  color: white;
+  padding: 20px;
+}
