@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>반응형 웹사이트 테스트</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>완벽한 반응형 웹사이트</h1>
+        <nav class="nav">
+          <a href="#home">홈</a>
+          <a href="#about">소개</a>
+          <a href="#services">서비스</a>
+          <a href="#contact">연락처</a>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="grid">
+          <div class="card">
+            <h3>모바일 최적화</h3>
+            <p>모든 모바일 기기에서 완벽하게 작동합니다.</p>
+          </div>
+          <div class="card">
+            <h3>태블릿 지원</h3>
+            <p>태블릿 환경에 최적화된 레이아웃을 제공합니다.</p>
+          </div>
+          <div class="card">
+            <h3>데스크톱 호환</h3>
+            <p>큰 화면에서도 아름다운 디자인을 유지합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function generateQRCode() {
+        const currentURL = window.location.href;
+        const qrAPI = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(currentURL)}`;
+
+        const qrContainer = document.createElement("div");
+        qrContainer.innerHTML = `
+ <div style="position: fixed; top: 20px; right: 20px; background: white; padding: 10px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 1000;">
+ <p style="margin-bottom: 10px; font-size: 12px;">모바일에서 테스트하기</p>
+ <img src="${qrAPI}" alt="QR Code" style="display: block;">
+ </div>
+ `;
+
+        document.body.appendChild(qrContainer);
+      }
+
+      // 페이지 로드 시 QR 코드 생성
+      window.addEventListener("load", generateQRCode);
+    </script>
+  </body>
+</html>
