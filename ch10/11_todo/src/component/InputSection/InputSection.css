@@ -1,0 +1,22 @@
+.input-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#addBtn {
+  padding: 12p 20px;
+  margin-left: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
